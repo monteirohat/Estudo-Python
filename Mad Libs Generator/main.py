@@ -49,24 +49,31 @@ ser anão, ter cabelos vermelhos, orelhas pontudas e dentes esverdeados.
 Bom, antes de começar nossa história, iremos lhe perguntar algumas palavras.
 Vamos lá!
 """)
-            nome = input("Informe um nome:")
-
+            nome_masculino = input("Informe um nome masculino:")
+            profissao = input("Informe uma profissão:") 
+            defeito = input("Informe um defeito:")
+            qualidade = input("Informe uma qualidade:") 
+            qualidade_2 = input("Informe outra qualidade:")
+            comida = input("Informe o nome de uma comida:")
+            coisa_nojenta = input("Diga algo nojento:")
+            objeto = input("Informe um objeto:")
 
             print_history = """
-Conta a lenda que o {0} é protetor dos animais de pele, couro ou chifre, como porcos, tamanduás, cobras, tatus, veados, etc.
-Em sua missão, assusta os caçadores que matam esses animais de forma cruel e predatória. 
-Muitas fêmeas são mortas quando estão prenhas e esses homens, insensíveis, não têm a mínima compaixão por esses animais.
+Conta a lenda que o {0} é protetor dos animais de pele, couro ou chifre, como porcos {3}, tamanduás {4}, cobras, tatus, veados, etc.
+Em sua missão, assusta os {1} que matam esses animais de forma cruel e predatória. 
+Muitas fêmeas são mortas quando estão prenhas e esses homens, {2}, não têm a mínima compaixão por esses animais.
 
-{0} é muito danado, prega peças nos homens que chegam às matas, mal intencionados, querendo matar animais. 
+{0} é muito danado, prega peças nos {1} que chegam às matas, mal intencionados, querendo matar animais. 
 Vendo isso, {0} solta uivos e gritos, assombrando-os.
-Outra forma de defender os bichos é espantando-os para longe dos caçadores ou ressuscitando os que foram mortos.
+Outra forma de defender os bichos é espantando-os para longe dos {1} ou ressuscitando os que foram mortos.
 
-{0} fica furioso e lança seu barulho, persegue os caçadores, bate em seus cachorros, até que os mesmos fujam da floresta, deixando a arma jogada ao chão.
+{0} fica furioso e lança seu {6}, persegue os {1}, bate em seus cachorros, até que os mesmos fujam da floresta, deixando a {7} jogada ao chão.
 
 Porém  {0} não é totalmente correto, pois gosta de fumo e bebida. 
-Com isso, alguns caçadores levam esses presentinhos para ele em troca de uma boa caçada. 
+Com isso, alguns {1} levam esses presentinhos para ele em troca de uma boa {5}. 
 Mas a caça deve acontecer sem maltratar o animal, nem matar uma fêmea que espera um filhote.
-""".format(nome)
+""".format(nome_masculino,profissao,defeito,qualidade,qualidade_2,comida, coisa_nojenta,objeto)
+
             print(print_history)
         elif int(option) == 2:
             print(historias[option])
@@ -77,9 +84,8 @@ Mas a caça deve acontecer sem maltratar o animal, nem matar uma fêmea que espe
         elif int(option) == 5:
             print(historias[option])    
 
-
         break
     except:
         continue
 
-        
+        print("------------------------------------FIM----------------------------------")
