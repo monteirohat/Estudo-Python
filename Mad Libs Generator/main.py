@@ -59,7 +59,7 @@ Vamos lá!
             objeto = input("Informe um objeto:")
 
             print_history = """
-Conta a lenda que o {0} é protetor dos animais de pele, couro ou chifre, como porcos {3}, tamanduás {4}, cobras, tatus, veados, etc.
+Conta a lenda que a caipora de nome {0} é protetor dos animais de pele, couro ou chifre, como porcos {3}, tamanduás {4}, cobras, tatus, veados, etc.
 Em sua missão, assusta os {1} que matam esses animais de forma cruel e predatória. 
 Muitas fêmeas são mortas quando estão prenhas e esses homens, {2}, não têm a mínima compaixão por esses animais.
 
