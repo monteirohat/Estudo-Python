@@ -40,3 +40,11 @@ TESTES PRÁTICOS
 - https://www.certification-questions.com/microsoft-exam/98-381-dumps.html
 - Aplicatio ANDROID - Python MTA 98-381
 - https://chercher.tech/python-programming/microsoft-python-certification-exam-98-381-practice-tests-1
+
+---------------------------------------
+
+# PCEP - Certified Entry-Level Python Programmer
+
+Curso Gratuito EDUBE - https://edube.org/study/pe1
+
+
