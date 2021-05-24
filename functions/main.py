@@ -1,4 +1,4 @@
-from utils import *
+from functions.utils import *
 
 
 list_functions = {
