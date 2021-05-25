@@ -1,31 +1,41 @@
-import tkinter as tk
+from tkinter import *
 
 
 #    Pack;
 #    Grid;
 #    Place.
 
-
-class Application(tk.Frame):
+class Application(Frame):
     def __init__(self, master=None):
         super().__init__(master)
         self.master = master
         self.pack()
-        self.create_widgets()
+        self.initUI()
+
+    def initUI(self):
+        self.centerWindows()
+
+    def centerWindows(self):
+        w = 800
+        h = 600
+
+        sw = self.master.winfo_screenwidth()
+        sh = self.master.winfo_screenheight()
+
+        x = (sw - w)/2
+        y = (sh - h)/2
+        self.master.geometry('%dx%d+%d+%d' % (w, h, x, y))
 
 
-    def create_widgets(self):
-        self.hi_there = tk.Button(self)
-        self.hi_there["text"] = "Hello World\n(click me)"
-        #self.hi_there["command"] = self.say_hi
-        self.hi_there.pack(side="top")
+def main():
 
-        self.quit = tk.Button(self, text="QUIT", fg="red",
-                              command=self.master.destroy)
-        self.quit.pack(side="bottom")
+    # Properties mainForm
+    mainForm = Tk(className="Python Study")
+    mainForm.geometry("800x600")
 
+    app = Application(master=mainForm)
+    app.mainloop()
 
 
-root = tk.Tk()
-app = Application(master=root)
-app.mainloop()
+if __name__ == '__main__':
+    main()
